@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+.rowMovies{
+    padding: 15px 15px 0 15px;
+}
+.rowMovies h1{
+    color: #fff;
+    font-size:20px;
+}
+.moviesContainer{
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px;
+}
+.moviesContainer:hover{
+    cursor: pointer;
+}
+.moviesContainer::-webkit-scrollbar{
+    display: none;
+}
+.moviesContainer img{
+    height:100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+.moviesContainer.isPoster img{
+    height:250px;
+}
+.moviesContainer img:hover{
+    transform: scale(1.08);
+}

@@ -1,23 +1,46 @@
-import logo from './logo.svg';
+import { RowMovies } from './Components/RowMovies';
+import { Banner } from './Components/Banner';
+import requests from './requests';
 import './App.css';
+import { Navbar } from './Components/Navbar';
 
+/*
+movie-trailer
+react-youtube
+*/
 function App() {
+
+  
+// 2.12.33
+
+
+  /*console.log("rand: ",
+    Math.ceil(
+    Math.random() * (Object.keys(requests).length-1)
+    )
+    );*/
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* navbar */}
+      <Navbar />
+
+      {/* Banner */}
+      <Banner randomRequest={
+        /*Object.values(requests)[
+        Math.ceil( Math.random() * (Object.keys(requests).length-1) )]
+        */
+       Object.values(requests)[0]
+       } />
+
+
+      {/* List movies by Type */}
+      { 
+      Object.entries(requests).map( (movie,index) => {
+        return <RowMovies key={index} title={movie[0]} fetchUrl={movie[1]} />;
+      })
+      }
+      
+
     </div>
   );
 }

@@ -1,10 +1,7 @@
-const API_MOVIES_DB = "1bfbf98e5c46b579faef6bba72143ef1";
-
+const API_MOVIES_DB = process.env.API_MOVIES_DB;
 
 /*
 https://developers.themoviedb.org/3/trending/get-trending
-
-https://api.themoviedb.org/3/trending/movie/week?api_key=1bfbf98e5c46b579faef6bba72143ef1
 */
 
 const requests = {

@@ -4,21 +4,9 @@ import requests from './requests';
 import './App.css';
 import { Navbar } from './Components/Navbar';
 
-/*
-movie-trailer
-react-youtube
-*/
+
 function App() {
 
-  
-// 2.12.33
-
-
-  /*console.log("rand: ",
-    Math.ceil(
-    Math.random() * (Object.keys(requests).length-1)
-    )
-    );*/
   return (
     <div className="App">
       {/* navbar */}

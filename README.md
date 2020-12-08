@@ -1,6 +1,5 @@
 ########
 This is a demo application to exemplify a project developed in react similar to the netflix website.
-
 https://netflix-clone-183a3.web.app
 
 For any questions feel free to contact me :)
